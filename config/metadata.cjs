@@ -6,21 +6,13 @@ const {
 } = require("../package.json");
 
 module.exports = {
-  name: {
-    $: "webpack-userscript-template",
-    cn: "中文名",
-    en: "english name",
-  },
-  namespace: "https://trim21.me/",
+  name: "npu-next",
+  namespace: "https://mmate.xyz/",
   version: version,
   author: author,
   source: repository.url,
-  // 'license': 'MIT',
-  match: ["*://www.example.com/", "*://example.com/*"],
-  require: [
-    `https://cdn.jsdelivr.net/npm/jquery@${dependencies.jquery}/dist/jquery.min.js`,
-  ],
-  grant: ["GM.xmlHttpRequest"],
-  connect: ["httpbin.org"],
+  license: "MIT",
+  match: ["https://neptun2.ppke.hu/hallgato2_uj/*"],
+  require: [],
   "run-at": "document-end",
 };

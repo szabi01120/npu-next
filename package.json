@@ -3,8 +3,8 @@
   "description": "Build your UserScript with webpack",
   "version": "0.0.1",
   "author": {
-    "name": "Trim21",
-    "email": "trim21me@gmail.com"
+    "name": "mmate",
+    "email": "mmateka89@gmail.com"
   },
   "scripts": {
     "format": "prettier -w ./",
@@ -16,12 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/trim21/webpack-userscript-template"
+    "url": "https://github.com/l1pz/npu-next"
   },
   "private": true,
   "dependencies": {
-    "@trim21/gm-fetch": "^0.1.15",
-    "jquery": "^3.7.1"
+    "tslog": "^4.9.3"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,json}": [
@@ -29,8 +28,6 @@
     ]
   },
   "devDependencies": {
-    "@types/greasemonkey": "^4.0.7",
-    "@types/jquery": "^3.5.30",
     "@types/node": "^20.16.2",
     "browserslist": "^4.23.3",
     "cross-env": "^7.0.3",

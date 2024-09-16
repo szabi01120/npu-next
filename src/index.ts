@@ -1,21 +1,11 @@
 import "./style/main.less";
+import { Logger } from "tslog";
 
-//checkout homepage https://github.com/Trim21/gm-fetch for @trim21/gm-fetch
-import GM_fetch from "@trim21/gm-fetch";
-
+const logger = new Logger();
 async function main() {
-  console.log("script start");
-
-  // cross domain requests
-  console.log(`uuid: ${await fetchExample()}`);
-}
-
-async function fetchExample(): Promise<string> {
-  const res = await GM_fetch("https://httpbin.org/uuid");
-  const data = await res.json();
-  return data.uuid;
+  logger.info("Neptun PowerUp! Next loaded");
 }
 
 main().catch((e) => {
-  console.log(e);
+  logger.error(e);
 });
