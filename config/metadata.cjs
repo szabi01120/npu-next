@@ -12,7 +12,7 @@ module.exports = {
   author: author,
   source: repository.url,
   license: "MIT",
-  match: ["https://neptun2.ppke.hu/hallgato2_uj/*"],
+  include: ["https://neptun*.ppke.hu/hallgato*_uj/*"],
   require: [],
   "run-at": "document-end",
 };
